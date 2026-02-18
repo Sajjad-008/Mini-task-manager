@@ -40,3 +40,8 @@ def delete_task(index):
         save_tasks(tasks)
     else:
         print("Invalid task number.")
+
+
+def count_tasks():
+    tasks = load_tasks()
+    print(f"Total tasks: {len(tasks)}")
