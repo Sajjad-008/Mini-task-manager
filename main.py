@@ -1,4 +1,5 @@
 from task_manager import add_task, list_tasks, delete_task, count_tasks
+from utils import print_separator
 
 def show_menu():
     print("\n=== Task Manager ===")
@@ -9,6 +10,7 @@ def show_menu():
     print("5. Exit")
 
 while True:
+    print_separator()
     show_menu()
     choice = input("Choose an option: ")
 
